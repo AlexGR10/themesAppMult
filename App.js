@@ -13,6 +13,7 @@ import Profile from './src/screens/Profile';
 import Config from './src/screens/Config';
 import Register from './src/screens/Register';
 import Login from './src/screens/Login';
+import Competencias from "./src/screens/Competencias";
 
 const Tab = createBottomTabNavigator();
 const Stack = createNativeStackNavigator();
@@ -44,6 +45,7 @@ const MainTab = () => {
       <Tab.Screen name="Home" component={Home} options={{ headerShown: false }} />
       <Tab.Screen name="Profile" component={Profile} options={{ headerShown: false }} />
       <Tab.Screen name="Config" component={Config} options={{ headerShown: false }} />
+      <Tab.Screen name="Competencias" component={Competencias} options={{headerShown: false}} />
     </Tab.Navigator>
   );
 }
